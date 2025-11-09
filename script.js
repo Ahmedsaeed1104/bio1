@@ -551,11 +551,11 @@ function getQuestionImagePath(questionNumber) {
     const { topic, subtopic, part } = currentState;
 
     if (topic === "QUES2") {
-        return `QUES/QUES2/${subtopic}/${part}/Slide${questionNumber}.png`;
+        return `QUES/QUES2/${subtopic}/${part}/Slide${questionNumber}.PNG`;
     } else if (subtopic) {
-        return `QUES/${topic}/${subtopic}/${part}/Slide${questionNumber}.png`;
+        return `QUES/${topic}/${subtopic}/${part}/Slide${questionNumber}.PNG`;
     } else {
-        return `QUES/${topic}/${part}/Slide${questionNumber}.png`;
+        return `QUES/${topic}/${part}/Slide${questionNumber}.PNG`;
     }
 }
 
