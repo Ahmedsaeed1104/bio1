@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علم الأحياء - المعلمة حنان الزهراني</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>علم الأحياء</h1>
+                        <p>المعلمة حنان عيد الزهراني</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li class="nav-item"><a href="#tests" class="nav-link">الأسئلة والاختبارات</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">التواصل</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <main>
+        <!-- قسم الترحيب -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">مرحباً بكم في عالم <span class="highlight-text">الأحياء</span></h1>
+                    <p class="hero-description">اكتشف عجائب الحياة من أصغر الخلايا إلى أكبر النظم البيئية. منصة تعليمية
+                        تفاعلية تجعل دراسة الأحياء تجربة ممتعة لا تُنسى</p>
+                    <div class="hero-buttons">
+                        <a href="#tests" class="btn btn-primary">ابدأ الاختبارات</a>
+                        <a href="#contact" class="btn btn-secondary">تواصل معنا</a>
+                    </div>
+                </div>
+                <div class="hero-animation">
+                    <div class="biology-hero-animation">
+                        <div class="cell-animation"></div>
+                        <div class="dna-helix">
+                            <div class="dna-strand"></div>
+                            <div class="dna-node" style="top: 10%;"></div>
+                            <div class="dna-node" style="top: 20%;"></div>
+                            <div class="dna-node" style="top: 30%;"></div>
+                            <div class="dna-node" style="top: 40%;"></div>
+                            <div class="dna-node" style="top: 50%;"></div>
+                            <div class="dna-node" style="top: 60%;"></div>
+                            <div class="dna-node" style="top: 70%;"></div>
+                            <div class="dna-node" style="top: 80%;"></div>
+                            <div class="dna-node" style="top: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-element element-1"><i class="fas fa-microscope"></i></div>
+                <div class="floating-element element-2"><i class="fas fa-dna"></i></div>
+                <div class="floating-element element-3"><i class="fas fa-seedling"></i></div>
+                <div class="floating-element element-4"><i class="fas fa-leaf"></i></div>
+            </div>
+        </section>
+
+        <!-- قسم الاختبارات التفاعلية -->
+        <section id="tests" class="tests-section">
+            <div class="container">
+                <h2 class="section-title">الأسئلة والاختبارات التفاعلية</h2>
+
+                <!-- تبويبات الأقسام الرئيسية -->
+                <div class="tests-tabs">
+                    <button class="test-tab-btn active" data-topic="QUES1">أسئلة تحصيلي أحياء 1</button>
+                    <button class="test-tab-btn" onclick="window.location.href='index2.html'">
+                        أسئلة تحصيلي أحياء 2
+                    </button>
+
+                    <button class="test-tab-btn" data-topic="QUES3">أسئلة تحصيلي أحياء 3</button>
+                    <button class="test-tab-btn" data-topic="QUES4">أسئلة تحصيلي علم البيئة</button>
+                </div>
+
+                <!-- نتائج الاختبار -->
+                <div id="test-results" class="test-results">
+                    <div class="results-content">
+                        <h3>نتيجة الاختبار</h3>
+                        <div class="score-circle">
+                            <span class="score-value">0</span>
+                            <span class="score-percent">%</span>
+                        </div>
+                        <p class="score-text">أجبت بشكل صحيح على <span class="correct-answers">0</span> من أصل <span
+                                class="total-questions">0</span> سؤال</p>
+                        <div class="results-actions">
+                            <button class="btn btn-primary retry-btn">إعادة الاختبار</button>
+                            <button class="btn btn-outline review-btn">مراجعة الإجابات</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم أسئلة تحصيلي أحياء 1 -->
+                <div id="topic-QUES1" class="test-topic-content active">
+                    <div class="test-info">
+                        <h3>أسئلة تحصيلي أحياء 1</h3>
+                        <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                    </div>
+
+                    <!-- تبويبات الأجزاء الداخلية -->
+                    <div class="sub-tests-tabs">
+                        <button class="sub-test-tab-btn active" data-subtopic="q1">أسئلة الأبواب</button>
+                        <button class="sub-test-tab-btn" data-subtopic="q2">أسئلة الفصول</button>
+                    </div>
+
+                    <!-- أسئلة الأبواب -->
+                    <div id="subtopic-q1" class="test-subtopic-content active">
+                        <div class="test-info">
+                            <h4>أسئلة الأبواب</h4>
+                            <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                        </div>
+
+                        <!-- تبويبات الصفحات -->
+                        <div class="pages-tabs">
+                            <button class="page-tab-btn" data-page="p1">باب 1 و 2 (40 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p2">باب 3 (30 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p3">باب 4 (40 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p4">باب 5 (30 سؤال)</button>
+                        </div>
+
+                        <!-- رسالة التوجيه -->
+                        <div class="selection-guide">
+                            <div class="guide-content">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <h3>اختر جزء الاختبار</h3>
+                                <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                            </div>
+                        </div>
+
+                        <!-- صفحة الأسئلة -->
+                        <div class="questions-container" id="questions-container-QUES1-q1-p1" style="display: none;">
+                            <!-- سيتم إضافة الأسئلة هنا ديناميكيًا -->
+                        </div>
+                        <div class="test-navigation" style="display: none;">
+                            <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                            <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                    class="total-pages">1</span></span>
+                            <button class="btn btn-primary next-btn">التالي</button>
+                        </div>
+                    </div>
+
+                    <!-- أسئلة الفصول -->
+                    <div id="subtopic-q2" class="test-subtopic-content" style="display: none;">
+                        <div class="test-info">
+                            <h4>أسئلة الفصول</h4>
+                            <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                        </div>
+
+                        <!-- تبويبات الصفحات -->
+                        <div class="pages-tabs">
+                            <button class="page-tab-btn" data-page="p1">فصل 1 و 2 (17 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p2">فصل 3 (14 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p3">فصل 4 (14 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p4">فصل 5 (13 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p5">فصل 6 (14 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p6">فصل 7 (8 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p7">فصل 8 (9 سؤال)</button>
+                        </div>
+
+                        <!-- رسالة التوجيه -->
+                        <div class="selection-guide">
+                            <div class="guide-content">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <h3>اختر جزء الاختبار</h3>
+                                <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                            </div>
+                        </div>
+
+                        <!-- صفحة الأسئلة -->
+                        <div class="questions-container" id="questions-container-QUES1-q2-p1" style="display: none;">
+                            <!-- سيتم إضافة الأسئلة هنا ديناميكيًا -->
+                        </div>
+                        <div class="test-navigation" style="display: none;">
+                            <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                            <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                    class="total-pages">1</span></span>
+                            <button class="btn btn-primary next-btn">التالي</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم أسئلة تحصيلي أحياء 2 -->
+                <div id="topic-QUES2" class="test-topic-content" style="display: none;">
+                    <div class="test-info">
+                        <h3>أسئلة تحصيلي أحياء 2</h3>
+                        <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                    </div>
+
+                    <!-- تبويبات الأجزاء الداخلية -->
+                    <div class="sub-tests-tabs">
+                        <button class="sub-test-tab-btn active" data-subtopic="q1">أحياء 2</button>
+                        <button class="sub-test-tab-btn" data-subtopic="q2">أحياء 2-1</button>
+                    </div>
+
+                    <!-- أحياء 2 -->
+                    <div id="subtopic-q1" class="test-subtopic-content active">
+                        <div class="test-info">
+                            <h4>أحياء 2</h4>
+                            <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                        </div>
+
+                        <!-- تبويبات الصفحات -->
+                        <div class="pages-tabs">
+                            <button class="page-tab-btn" data-page="p1">فصل 1 و 2 (23 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p2">فصل 3 (20 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p3">فصل 4 (18 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p4">فصل 5 و 6 (20 سؤال)</button>
+                        </div>
+
+
+                        <!-- رسالة التوجيه -->
+                        <div class="selection-guide">
+                            <div class="guide-content">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <h3>اختر جزء الاختبار</h3>
+                                <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                            </div>
+                        </div>
+
+                        <!-- حاويات الأسئلة لأحياء 2 -->
+                        <div class="questions-container" id="questions-container-QUES2-q1-p1" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q1-p2" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q1-p3" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q1-p4" style="display: none;">
+                        </div>
+
+                        <div class="test-navigation" style="display: none;">
+                            <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                            <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                    class="total-pages">1</span></span>
+                            <button class="btn btn-primary next-btn">التالي</button>
+                        </div>
+                    </div>
+
+                    <!-- أحياء 2-1 -->
+                    <div id="subtopic-q2" class="test-subtopic-content" style="display: none;">
+                        <div class="test-info">
+                            <h4>أحياء 2-1</h4>
+                            <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                        </div>
+
+                        <!-- تبويبات الصفحات -->
+                        <div class="pages-tabs">
+                            <button class="page-tab-btn" data-page="p1">فصل 1 (8 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p2">فصل 2 و 3 (22 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p3">فصل 4 (12 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p4">فصل 5 (19 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p5">فصل 6 (49 سؤال)</button>
+                            <button class="page-tab-btn" data-page="p6">فصل 7 (16 سؤال)</button>
+                        </div>
+
+                        <!-- رسالة التوجيه -->
+                        <div class="selection-guide">
+                            <div class="guide-content">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <h3>اختر جزء الاختبار</h3>
+                                <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                            </div>
+                        </div>
+
+                        <!-- حاويات الأسئلة لأحياء 2-1 -->
+                        <div class="questions-container" id="questions-container-QUES2-q2-p1" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q2-p2" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q2-p3" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q2-p4" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q2-p5" style="display: none;">
+                        </div>
+                        <div class="questions-container" id="questions-container-QUES2-q2-p6" style="display: none;">
+                        </div>
+
+                        <div class="test-navigation" style="display: none;">
+                            <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                            <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                    class="total-pages">1</span></span>
+                            <button class="btn btn-primary next-btn">التالي</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم أسئلة تحصيلي أحياء 3 -->
+                <div id="topic-QUES3" class="test-topic-content" style="display: none;">
+                    <div class="test-info">
+                        <h3>أسئلة تحصيلي أحياء 3</h3>
+                        <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                    </div>
+
+                    <!-- تبويبات الصفحات -->
+                    <div class="pages-tabs">
+                        <button class="page-tab-btn" data-page="p1">فصل 1 (16 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p2">فصل 2 (21 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p3">فصل 3 (20 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p4">فصل 4 (15 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p5">فصل 5 (13 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p6">فصل 6 (12 سؤال)</button>
+                    </div>
+
+                    <!-- رسالة التوجيه -->
+                    <div class="selection-guide">
+                        <div class="guide-content">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <h3>اختر جزء الاختبار</h3>
+                            <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                        </div>
+                    </div>
+
+                    <!-- صفحة الأسئلة -->
+                    <div class="questions-container" id="questions-container-QUES3-p1" style="display: none;">
+                        <!-- سيتم إضافة الأسئلة هنا ديناميكيًا -->
+                    </div>
+                    <div class="test-navigation" style="display: none;">
+                        <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                        <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                class="total-pages">1</span></span>
+                        <button class="btn btn-primary next-btn">التالي</button>
+                    </div>
+                </div>
+
+                <!-- قسم أسئلة تحصيلي علم البيئة -->
+                <div id="topic-QUES4" class="test-topic-content" style="display: none;">
+                    <div class="test-info">
+                        <h3>أسئلة تحصيلي علم البيئة</h3>
+                        <p>اختر الإجابة الصحيحة لكل سؤال. بعد الإجابة، سيظهر لك التصحيح تلقائياً.</p>
+                    </div>
+
+                    <!-- تبويبات الصفحات -->
+                    <div class="pages-tabs">
+                        <button class="page-tab-btn" data-page="p1">فصل 1 و 2 (19 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p2">فصل 3 (13 سؤال)</button>
+                        <button class="page-tab-btn" data-page="p3">فصل 4 و 5 (27 سؤال)</button>
+                    </div>
+
+                    <!-- رسالة التوجيه -->
+                    <div class="selection-guide">
+                        <div class="guide-content">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <h3>اختر جزء الاختبار</h3>
+                            <p>اضغط على أحد الأجزاء أعلاه لبدء الاختبار</p>
+                        </div>
+                    </div>
+
+                    <!-- صفحة الأسئلة -->
+                    <div class="questions-container" id="questions-container-QUES4-p1" style="display: none;">
+                        <!-- سيتم إضافة الأسئلة هنا ديناميكيًا -->
+                    </div>
+                    <div class="test-navigation" style="display: none;">
+                        <button class="btn btn-outline prev-btn" disabled>السابق</button>
+                        <span class="page-info">الصفحة <span class="current-page">1</span> من <span
+                                class="total-pages">1</span></span>
+                        <button class="btn btn-primary next-btn">التالي</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">تواصل معنا</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="teacher-card">
+
+                            <div class="teacher-details">
+                                <h3>المعلمة حنان عيد الزهراني</h3>
+                                <p>معلمة أحياء متميزة</p>
+                                <p class="teacher-quote">"أُعلّم الأحياء بشغف، وأساعد طالباتي على اكتشاف عجائب الحياة من
+                                    حولنا."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <h3 class="contact-methods-title">طرق التواصل</h3>
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>البريد الإلكتروني</h4>
+                                    <a href="mailto:example@example.com">example@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>علم الأحياء</h2>
+                            <p>المعلمة حنان عيد الزهراني</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">منصة تعليمية تفاعلية لتعليم علم الأحياء بطرق مبتكرة وجذابة</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#tests">الأسئلة والاختبارات</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> example@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
