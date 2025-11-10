@@ -694,6 +694,13 @@ function showTestResults() {
     }
 
     testResults.classList.add('show');
+    // التمرير إلى أعلى قسم الاختبارات
+    setTimeout(() => {
+        document.getElementById('tests').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }, 100);
 }
 
 // حساب النتيجة النهائية
